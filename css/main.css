@@ -79,9 +79,9 @@
    * Allow only vertical resizing of textareas.
    */
   
-  textarea {
+  textarea 
   /**  resize: vertical;   **/
-  }
+  
 
 /* ==========================================================================
    Author's custom styles
@@ -116,6 +116,7 @@ body {
     width: 100%;
     padding: 10px;
 }
+
 #vision-board {
     display:flex;
     justify-content: space-between;
@@ -126,12 +127,8 @@ body {
     background-repeat: no-repeat;
     background-position: right;
     background-color:purple;
-    
-   /** height: 850px;  **/
-   /** margin: auto;  **/
-    /** text-transform: uppercase;  ***/
-   /*** width: 1200px;  ***/
 }
+
 img {
     width: 100%;
     height: auto;
@@ -139,10 +136,6 @@ img {
 }
 
 .block {
-    /***  display: flex;
-    flex-flow: wrap;
-    justify-content: flex-start;
-    align-items: flex-end;   ***/
     padding: 10px;
     outline: 1px dotted red;
     width: 100%;
@@ -196,10 +189,10 @@ margin-block-start: 1em;
     padding: 5px;
     font-weight: bold;
 }
+
 q {
 font-style: italic;
 }
-
 
 footer {
   width: 100%;
@@ -211,13 +204,13 @@ footer {
   text-align:center;
 }
 
-footer p{
+footer p {
   margin: 20px;
   font-size:0.89em;
 }
 
-footer small{
-  font-size: 0.6875em:
+footer small {
+  font-size: 0.6875em;
 }
 
 /* ==========================================================================
@@ -307,7 +300,7 @@ footer small{
     Modify as content requires.
     ========================================================================== */
  
- @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
    /* Tablet Styles here */
 
    body {
@@ -316,12 +309,19 @@ footer small{
    }
 
    #header {
+     text-align:center;
    }
 
+   #vision-board {
+     justify-content: space-around;
+   }
    .block {
         width: 30%;
         margin: 2px;
+    }
 
+    .left-block.row2.row3 p {
+      margin-block-start: 200px;
     }
 
    .middle-block p {
@@ -329,9 +329,18 @@ footer small{
      text-align: center;
    }
 
+   .middle-block.row1 p {
+     margin-block-start: 200px;
+   }
+
    .right-block p {
        text-align: right;
    }
+
+   .right-block.row2 p {
+    margin-block-start: 200px;
+  }
+}
    /*********** END OF TABLET STYLES  *********/
 
 @media only screen and (min-width: 1200px) {
@@ -340,6 +349,7 @@ footer small{
    align-items: center;
    height: 400px;
  }
+}
        /*********** END OF DESKTOP STYLES  *********/
 
  /* ==========================================================================
