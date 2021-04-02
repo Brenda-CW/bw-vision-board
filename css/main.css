@@ -320,8 +320,8 @@ footer small {
         margin: 2px;
     }
 
-    .left-block.row2.row3 p {
-      margin-block-start: 200px;
+    .left-block.row2 p {
+      margin-block-start: 180px;
     }
 
    .middle-block p {
@@ -338,7 +338,7 @@ footer small {
    }
 
    .right-block.row2 p {
-    margin-block-start: 200px;
+    margin-block-start: 180px;
   }
 }
    /*********** END OF TABLET STYLES  *********/
@@ -349,6 +349,36 @@ footer small {
    align-items: center;
    height: 400px;
  }
+
+.left-block.row1 p {
+  margin-block-start: 260px;
+}
+
+.left-block.row2 p {
+  margin-block-start: 255px;
+}
+
+.left-block.row3 p {
+  margin-block-start: 270px;
+}
+
+.middle-block.row1 p {
+  margin-block-start: 250px;
+}
+
+.middle-block.row2 p {
+  margin-block-start: 280px;
+}
+
+.right-block.row2 p {
+  margin-block-start: 210px;
+}
+
+footer {
+  display:block;
+  margin-top: 30px;
+  text-align: center;
+}
 }
        /*********** END OF DESKTOP STYLES  *********/
 
