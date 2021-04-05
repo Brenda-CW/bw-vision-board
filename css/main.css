@@ -13,7 +13,7 @@
 
    html {
     color: rgb(249, 249, 249);
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.4;
   }
   
@@ -105,7 +105,7 @@ body {
     min-width: 360px;
     margin: 0px auto;
     font-family: 'Montsearrat', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight:lighter;
 }
 
@@ -147,8 +147,21 @@ img {
   margin-block-start: 230px;
 }
 
+.left-block.row2 p {
+  background-color: rgba(249, 249, 249, 0.6);
+  color: #000;
+}
+
 .middle-block p {
   margin-block-start: 230px;
+}
+
+.middle-block.row1 p {
+  color:#000;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .middle-block.row2 p{
@@ -162,10 +175,12 @@ margin-block-start: 1em;
 
 .right-block.row2 p{
   margin-block-start: 220px;
+  color: #000;
 }
 
 .right-block.row3 p{
   color: #000;
+  margin-block-start: .6em;
 }
 
 .marker {
@@ -200,7 +215,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-flow: column nowrap;
   text-align:center;
 }
 
@@ -317,20 +332,21 @@ footer small {
    }
    .block {
         width: 30%;
-        margin: 2px;
+        margin: 2.75px;
     }
 
     .left-block.row2 p {
-      margin-block-start: 180px;
+      margin-block-start: 235px;
     }
 
-   .middle-block p {
-     width: 100%;
-     text-align: center;
+   .middle-block.row1 p {
+     margin-block-start: 205px;
+     text-align: right;
+     color:#FFFFFF;
    }
 
-   .middle-block.row1 p {
-     margin-block-start: 200px;
+   .middle-block.row2 p {
+     text-align: left;
    }
 
    .right-block p {
@@ -340,6 +356,10 @@ footer small {
    .right-block.row2 p {
     margin-block-start: 180px;
   }
+
+  footer p {
+    width: 55%;
+  }
 }
    /*********** END OF TABLET STYLES  *********/
 
@@ -348,35 +368,40 @@ footer small {
  .block {
    align-items: center;
    height: 400px;
+   margin: 13px;
  }
 
 .left-block.row1 p {
-  margin-block-start: 260px;
+  margin-block-start: 275px;
 }
 
 .left-block.row2 p {
-  margin-block-start: 255px;
+  margin-block-start: 285px;
 }
 
 .left-block.row3 p {
-  margin-block-start: 270px;
+  margin-block-start: 275px;
 }
 
 .middle-block.row1 p {
-  margin-block-start: 250px;
+  margin-block-start: 265px;
 }
 
 .middle-block.row2 p {
-  margin-block-start: 280px;
+  margin-block-start: 290px;
+  width: 50%;
 }
 
 .right-block.row2 p {
-  margin-block-start: 210px;
+  margin-block-start: 275px;
 }
 
 footer {
-  display:block;
   margin-top: 30px;
+}
+
+footer p {
+  width: 80%;
   text-align: center;
 }
 }
